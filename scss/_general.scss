@@ -1,0 +1,57 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    //font-family: 'Lexend Deca' , sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    font-weight: 400;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $main_bg;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+
+    p {
+        color: $white_h;
+    }
+
+    a {
+        color: $white_p;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+    }
+
+    a:hover {
+        color: $accent;
+    }
+}
